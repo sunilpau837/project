@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GeoTagged</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_emergency">Emergency</string>
+    <string name="geotagged_demo">GeoTagged Demo</string>
+    <string name="loading" />
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#4CB1F6"
+
+    tools:context="sunil.geotagged4.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+       >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:text="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <Button
+        android:layout_width="101dp"
+        android:layout_height="85dp"
+        android:text="Current location"
+        android:background="@drawable/circle_background"
+        android:textColor="#FAFDFD"
+        android:drawableTop="@drawable/ic_edit_location_black"
+
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="center_vertical|right"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|left"
+        android:textStyle="bold" />
+
+    <include layout="@layout/content_main"
+        android:id="@+id/include" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:text="Share"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_marginRight="109dp"
+        android:layout_marginEnd="129dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/circle_background"
+        android:textColor="#FAFDFD"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        android:drawableTop="@drawable/ic_share"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:layout_width="101dp"
+        android:layout_height="84dp"
+        android:text="Tag Location"
+        android:id="@+id/button9"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="top|left"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:background="@drawable/circle_background"
+        android:textColor="#FAFDFD"
+        android:drawableTop="@drawable/ic_friends"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|right"
+        android:textStyle="bold" />
+
+
+</android.support.design.widget.CoordinatorLayout>
